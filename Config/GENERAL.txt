@@ -1,3 +1,5 @@
+#通用配置，包含5g模组插件，适用diy cpe
+
 #科学插件调整
 CONFIG_PACKAGE_luci-app-openclash=y
 
