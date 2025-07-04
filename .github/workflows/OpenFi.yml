@@ -49,7 +49,7 @@ jobs:
       matrix:
         CONFIG: [openfi_6c]
         REPO_INFO:
-          - {SOURCE: "padavanonly/immortalwrt-mt798x-6.6", BRANCH: "24.10"}
+          - {SOURCE: "xx-vv/OpenFi", BRANCH: "openfi6c_new"}
 
     #调用公用编译核心OpenFi-CORE.yml
     uses: ./.github/workflows/OpenFi-CORE.yml
