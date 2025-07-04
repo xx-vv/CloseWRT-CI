@@ -38,7 +38,7 @@ CONFIG_PACKAGE_luci-app-mtwifi-cfg=y
 CONFIG_PACKAGE_luci-app-turboacc-mtk=y
 CONFIG_PACKAGE_luci-app-upnp-mtk-adjust=y
 #删除插件
-CONFIG_PACKAGE_luci-app-mosdns=n
+
 #参数调整
 CONFIG_DEVEL=y
 CONFIG_CCACHE=y
