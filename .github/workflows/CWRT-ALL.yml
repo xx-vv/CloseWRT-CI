@@ -51,8 +51,8 @@ jobs:
         REPO_INFO:
           - {SOURCE: "zz-ee/immortalwrt-mt798x-6.6", BRANCH: "openwrt-24.10-6.6"}
 
-    #调用公用编译核心WRT-CORE.yml
-    uses: ./.github/workflows/WRT-CORE.yml
+    #调用公用编译核心AirPi-CORE.yml
+    uses: ./.github/workflows/AirPi-CORE.yml
     with:
       #编译配置
       WRT_CONFIG: ${{matrix.CONFIG}}
