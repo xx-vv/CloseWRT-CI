@@ -47,7 +47,7 @@ jobs:
       fail-fast: false
       #max-parallel: 4
       matrix:
-        CONFIG: [MT7981]
+        CONFIG: [mt7981]
         REPO_INFO:
           - {SOURCE: "zz-ee/immortalwrt-mt798x-6.6", BRANCH: "openwrt-24.10-6.6"}
 
