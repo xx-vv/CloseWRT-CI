@@ -1,5 +1,5 @@
 #云编译公用核心
-name: OpenFi-CORE
+name: OpenFi-5.4-CORE
 
 on:
   workflow_call:
@@ -173,7 +173,7 @@ jobs:
           else
             find ./defconfig -type f -iname "*$WRT_CONFIG*" -exec cat {} + | sort | uniq > .config
             $GITHUB_WORKSPACE/Scripts/Settings.sh
-            cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt $GITHUB_WORKSPACE/Config/OpenFi.txt >> .config
+            cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt $GITHUB_WORKSPACE/Config/OpenFi-5.4.txt >> .config
           fi
 
           make defconfig -j$(nproc) && make clean -j$(nproc)
