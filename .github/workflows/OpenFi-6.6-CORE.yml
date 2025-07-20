@@ -1,5 +1,5 @@
 #云编译公用核心
-name: Openfi-CORE
+name: OpenFi-6.6-CORE
 
 on:
   workflow_call:
@@ -171,7 +171,7 @@ jobs:
           if [[ "${WRT_CONFIG,,}" == *"test"* ]]; then
             cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt >> .config
           else
-            cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt $GITHUB_WORKSPACE/Config/Openfi.txt >> .config
+            cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt $GITHUB_WORKSPACE/Config/OpenFi-6.6.txt >> .config
           fi
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh
