@@ -51,8 +51,8 @@ jobs:
         REPO_INFO:
           - {SOURCE: "zz-ee/immortalwrt-mt798x-6.6", BRANCH: "2410"}
 
-    #调用公用编译核心5.4-CORE.yml
-    uses: ./.github/workflows/5.4-CORE.yml
+    #调用公用编译核心n60pro-5.4-CORE.yml
+    uses: ./.github/workflows/n60pro-5.4-CORE.yml
     with:
       #编译配置
       WRT_CONFIG: ${{matrix.CONFIG}}
