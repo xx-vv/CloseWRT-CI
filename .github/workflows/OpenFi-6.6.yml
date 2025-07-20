@@ -1,5 +1,5 @@
 #CI项目
-name: Openfi
+name: OpenFi-6.6
 
 #CI计划
 on:
@@ -51,8 +51,8 @@ jobs:
         REPO_INFO:
           - {SOURCE: "zz-ee/immortalwrt-mt798x-6.6", BRANCH: "openwrt-24.10-6.6"}
 
-    #调用公用编译核心Openfi-CORE.yml
-    uses: ./.github/workflows/Openfi-CORE.yml
+    #调用公用编译核心OpenFi-6.6-CORE.yml
+    uses: ./.github/workflows/OpenFi-6.6-CORE.yml
     with:
       #编译配置
       WRT_CONFIG: ${{matrix.CONFIG}}
