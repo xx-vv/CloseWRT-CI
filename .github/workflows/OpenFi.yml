@@ -3,9 +3,11 @@ name: OpenFi
 
 #CI计划
 on:
-  #自动编译：早上6点
-  schedule:
-    - cron: 0 22 * * 0
+  #自动编译：当Auto-Clean运行完成后
+  workflow_run:
+    workflows: ["Auto-Clean"]
+    types:
+      - completed
   #手动编译
   workflow_dispatch:
     inputs:
