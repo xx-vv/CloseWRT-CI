@@ -49,7 +49,7 @@ jobs:
       matrix:
         CONFIG: [MT7981]
         REPO_INFO:
-          - {SOURCE: "zz-ee/immortalwrt-mt798x-6.6", BRANCH: "2410"}
+          - {SOURCE: "xx-vv/immortalwrt-mt798x", BRANCH: "openwrt-21.02"}
 
     #调用公用编译核心WRT-CORE-5.4.yml
     uses: ./.github/workflows/WRT-CORE-5.4.yml
