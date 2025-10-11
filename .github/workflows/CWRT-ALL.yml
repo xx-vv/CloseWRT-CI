@@ -51,8 +51,8 @@ jobs:
         REPO_INFO:
           - {SOURCE: "xx-vv/immortalwrt-mt798x", BRANCH: "openwrt-21.02"}
 
-    #调用公用编译核心WRT-CORE-5.4.yml
-    uses: ./.github/workflows/WRT-CORE-5.4.yml
+    #调用公用编译核心WRT-CORE.yml
+    uses: ./.github/workflows/WRT-CORE.yml
     with:
       #编译配置
       WRT_CONFIG: ${{matrix.CONFIG}}
